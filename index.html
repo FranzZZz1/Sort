@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header lock-padding">
+        <nav class="header__container container">
+          <img src="img/logo.png" alt="" class="header__logo" />
+          <ul class="header__list">
+            <li class="">
+              <div class="menu-item item menu__active">Главная</div>
+            </li>
+            <li class="popup__link">
+              <a href="#popup" class="popup__link-item menu-item">Войти</a>
+            </li>
+            <li class="header__profile">
+              <div href="" class="header__profile-item menu-item">Профиль</div>
+            </li>
+            <li class="header__admin">
+              <div href="" class="header__admin-item menu-item">
+                Настройки сайта
+              </div>
+            </li>
+            <li class="header__logOut">
+              <a href="" class="header__logOut-item menu-item">Выйти</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="plug"></div>
+        <article>
+          <div class="popup" id="popupIn">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="#header" class="popupIn__close close-popup">X</a>
+                <div class="popup__title">Sign In</div>
+                <div class="popup__signin-form">
+                  <span class="input__title">Почта</span>
+                  <input
+                    type="email"
+                    name=""
+                    id="signin__email"
+                    placeholder="Email"
+                    class="auth__input signin__email"
+                  />
+                  <span class="input__title">Пароль</span>
+                  <input
+                    type="password"
+                    name=""
+                    id="signin__password"
+                    placeholder="Password"
+                    class="auth__input signin__password"
+                  />
+                  <div class="error__message"></div>
+                  <input type="button" value="Войти" class="signin__button" />
+                  <a href="#popupUp" class="signup__link popup__link"
+                    >Ещё нет аккаунта?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup" id="popupUp">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="#header" class="popupUp__close close-popup">X</a>
+                <div class="popup__title">Sign Up</div>
+                <div class="popup__signup-form">
+                  <span class="input__title">Почта</span>
+                  <input
+                    type="email"
+                    name=""
+                    id="signup__email"
+                    placeholder="Email"
+                    class="auth__input signup__email"
+                  />
+                  <span class="input__title">Пароль</span>
+                  <input
+                    type="password"
+                    name=""
+                    id="signup__password"
+                    placeholder="Password"
+                    class="auth__input signup__password"
+                  />
+
+                  <span class="input__title">Повторите пароль</span>
+                  <input
+                    type="password"
+                    name=""
+                    id="signup__repeat-password"
+                    placeholder="Repeat password"
+                    class="auth__input signup__repeat-password"
+                  />
+                  <div class="errorUp__message"></div>
+                  <input type="button" value="Войти" class="signup__button" />
+                  <a href="#popupIn" class="signin__link popup__link"
+                    >Уже есть аккаунт?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="sort">
+          <div class="sort__container container">
+            <div class="sort__buttons">
+              <button class="sort__button price-btn" id="low-price">
+                Цена:<br />
+                <span class="change">сначала дорогие</span>
+              </button>
+              <button class="sort__button most-popular" id="most-popular">
+                Рейтинг:<br />
+                По популярности
+              </button>
+              <button class="sort__button higher-score" id="higher-score">
+                Рейтинг:<br />
+                По оценке
+              </button>
+            </div>
+
+            <div class="sort__list">
+              <div
+                class="sort__item"
+                data-price="1020"
+                data-popular="8"
+                data-score="7"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/1.png" alt="" />
+                  </div>
+                  <div class="sort__title">Lamborghini Huracan</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$1 020 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sort__item"
+                data-price="750"
+                data-popular="8"
+                data-score="6"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/2.png" alt="" />
+                  </div>
+                  <div class="sort__title">Corvett</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$750 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sort__item"
+                data-price="320"
+                data-popular="4"
+                data-score="3"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/3.png" alt="" />
+                  </div>
+                  <div class="sort__title">Ferrari</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$320 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sort__item"
+                data-price="980"
+                data-popular="9"
+                data-score="9"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/4.png" alt="" />
+                  </div>
+                  <div class="sort__title">Lamborghini Urus</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$980 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sort__item"
+                data-price="520"
+                data-popular="9"
+                data-score="8"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/5.png" alt="" />
+                  </div>
+                  <div class="sort__title">Audi R8</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$520 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sort__item"
+                data-price="220"
+                data-popular="10"
+                data-score="2"
+              >
+                <div class="sort__body">
+                  <div class="sort__img-body">
+                    <img class="sort__img" src="img/6.png" alt="" />
+                  </div>
+                  <div class="sort__title">Chevrolet Camaro</div>
+                  <div class="sort__divider"></div>
+                  <div class="sort__sub-title">
+                    И нет сомнений, что интерактивные прототипы, инициированные
+                    исключительно синтетически, превращены в посмешище, хотя
+                    само их существование приносит.
+                  </div>
+                  <div class="sort__purchase">
+                    <div class="sort__price">$220 000</div>
+                    <div class="sort__buy-btn">Buy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
